@@ -5,6 +5,6 @@ def index(request):
     message = request.GET.get("message")
     name = request.GET.get("name")
     data = {'message': message, 'name': name}
-    return render(request, "index.html", context=data)
+    return render(request, "new.php", context=data)
 
 

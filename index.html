@@ -1,7 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello Recruto!</title>
+</head>
 <body>
-<h1>Hello {{name}}!</h1>
-<p>{{message}}!</p>
+  <h1 id="greeting">Загрузка...</h1>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get("name");
+    const message = params.get("message");
+
+    // Формируем текст
+    const greetingText = `Hello ${name}! ${message}!`;
+
+    // Выводим на страницу
+    document.getElementById("greeting").innerText = greetingText;
+  </script>
 </body>
 </html>
