@@ -55,7 +55,7 @@ ROOT_URLCONF = 'metanit.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ["C:/Users/Алекс/Desktop/Main papka/aubameyang17.github.io"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
